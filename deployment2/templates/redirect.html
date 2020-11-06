@@ -1,0 +1,31 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="style.css" />
+<style>
+a,h2
+	{
+		text-align: center;
+	}
+</style>
+</head>
+<body style="background-color: rgb(3, 252, 232);">
+<div class="loading">
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <div class="obj"></div>
+      <h2> Click Below to view all reviews 👇 <h2>
+<a href= " {{url_for ('homme',url_handle=number,pd_handle=pd)}}">Click HERE </a>
+<h2> Click Below to DownLoad Data 👇 <h2>
+    <i <center><a href="{{url_for ('download',url_handle=number,pd_handle=pd)}}" download='datalog.html' >Click HERE</center></a></i>
+
+    </div>
+   </body>
+</html>

@@ -1,0 +1,83 @@
+{%extends 'base.html'%} 
+{%block title %}
+<title>User Page</title>
+<link rel="stylesheet" href="\static\style.css">
+
+ {%endblock%} 
+ 
+{%block content %} 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Flipkart</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="logout.html" target="_blank">Reviews</a></li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="logout1.html" target="_blank">Polarity</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Word Cloud
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="word" target="_blank">All Reviews Word Cloud</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="positive" target="_blank">Positive Word Cloud</a>
+          <a class="dropdown-item" href="negative" target="_blank">Negative Word Cloud</a>
+        </div>
+      </li>
+
+    </ul>
+    
+  </div>
+</nav>
+<style>
+	h1
+	{
+		text-align: center;
+	}
+	form
+	{
+	 	text-align: center;
+	}
+
+</style>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+
+<body>
+	<div class='w3-container w3-display-middle'>
+		<div class='w3-panel w3-card' style='height: 350px;'>
+		 <h1 style="color:yellow;">User Page</h1>    
+
+
+        <h1 style="color:yellow;">welcome {{user}}</h1><br></br>
+			<h1 style="color:yellow;">Flipkart Reviews Scraper</h1><br><br>
+			<form class="form-inline my-2 my-lg-0" id='input-form' method='POST' action='#'>
+				<input class="form-control mr-sm-2" type='text' name='url'  placeholder="Search" style='width: 300px;'/><br><br>
+				
+				<input class="btn btn-outline-success my-2 my-sm-0" id='submitbutton' type='submit'name='submitbutton' value='Search product'/>
+    			
+			</form>
+			
+		</div>
+	</div>
+	
+<div class="full-screen">
+    <video src="\static\web.mp4" autoplay muted loop></video>
+     
+    </div>
+
+<form action = '#' method='POST'
+    style = 'text-align: center' novalidate>
+</form>
+</body>
+{%endblock%} 
